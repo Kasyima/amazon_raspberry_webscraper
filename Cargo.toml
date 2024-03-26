@@ -1,0 +1,14 @@
+[package]
+name = "amazon_raspberry_webscraper"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+shuttle-runtime = "0.41.0"
+tokio = "1.26.0"
+chrono = "0.4.35"
+reqwest = "0.11.26"
+scraper = "0.19.0"
+tracing = "0.1.40"
+shuttle-shared-db = { version = "0.41.0", features = ["postgres"] }
+sqlx = { version = "0.7.4", features = ["runtime-tokio-native-tls", "postgres"] }
